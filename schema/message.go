@@ -250,6 +250,8 @@ type Message struct {
 	Role    RoleType `json:"role"`
 	Content string   `json:"content"`
 
+	ReasoningContent string `json:"reasoning_content,omitempty"`
+
 	// if MultiContent is not empty, use this instead of Content
 	// if MultiContent is empty, use Content
 	MultiContent []ChatMessagePart `json:"multi_content,omitempty"`
